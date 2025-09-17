@@ -53,8 +53,12 @@ const navigationItems = [
   }
 ];
 
-export const DashboardSidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+interface DashboardSidebarProps {
+  isCollapsed: boolean;
+  setIsCollapsed: (collapsed: boolean) => void;
+}
+
+export const DashboardSidebar = ({ isCollapsed, setIsCollapsed }: DashboardSidebarProps) => {
 
   return (
     <div className={`bg-dashboard-nav text-dashboard-nav-foreground transition-all duration-300 ${
