@@ -59,7 +59,7 @@ export const DashboardSidebar = () => {
   return (
     <div className={`bg-dashboard-nav text-dashboard-nav-foreground transition-all duration-300 ${
       isCollapsed ? "w-16" : "w-64"
-    } h-screen flex flex-col`}>
+    } h-screen flex flex-col fixed left-0 top-0 z-10`}>
       {/* Header */}
       <div className="p-4 border-b border-white/10">
         <div className="flex items-center justify-between">
