@@ -10,6 +10,7 @@ import {
   AlertCircle
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const mockData = {
   totalProjects: 156,
@@ -45,6 +46,8 @@ const mockData = {
 };
 
 export const Overview = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -62,6 +65,7 @@ export const Overview = () => {
           value={mockData.totalProjects}
           description="Active carbon ledger initiatives"
           icon={TreePine}
+          onClick={() => navigate('/projects')}
           trend={{
             value: 12,
             label: "from last month",
@@ -74,6 +78,7 @@ export const Overview = () => {
           value={`${(mockData.totalCredits / 1000000).toFixed(1)}M`}
           description="Total credits generated"
           icon={Coins}
+          onClick={() => navigate('/credits')}
           trend={{
             value: 8,
             label: "from last month",
@@ -86,6 +91,7 @@ export const Overview = () => {
           value={`${(mockData.tradedCredits / 1000000).toFixed(1)}M`}
           description="Successfully traded credits"
           icon={TrendingUp}
+          onClick={() => navigate('/credits')}
           trend={{
             value: 15,
             label: "from last month",
@@ -98,6 +104,7 @@ export const Overview = () => {
           value={mockData.pendingVerification}
           description="Projects awaiting verification"
           icon={Clock}
+          onClick={() => navigate('/projects')}
           trend={{
             value: -5,
             label: "from last week",
@@ -113,6 +120,7 @@ export const Overview = () => {
           value={mockData.activeOrganizations}
           description="Registered entities"
           icon={Building2}
+          onClick={() => navigate('/organizations')}
         />
         
         <DashboardCard
@@ -120,6 +128,7 @@ export const Overview = () => {
           value={mockData.verifiedProjects}
           description="Completed verifications"
           icon={CheckCircle}
+          onClick={() => navigate('/projects')}
         />
         
         <DashboardCard
@@ -127,6 +136,7 @@ export const Overview = () => {
           value={`${mockData.carbonSequestered}t`}
           description="Total CO₂ captured (tons)"
           icon={TreePine}
+          onClick={() => navigate('/projects')}
         />
       </div>
 
