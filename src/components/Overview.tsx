@@ -51,7 +51,7 @@ export const Overview = () => {
       <div className="border-b border-border pb-4">
         <h1 className="text-3xl font-bold text-foreground">Dashboard Overview</h1>
         <p className="text-muted-foreground mt-1">
-          Monitoring blue carbon projects and carbon credit management
+          Monitoring carbon ledger projects and carbon credit management
         </p>
       </div>
 
@@ -60,7 +60,7 @@ export const Overview = () => {
         <DashboardCard
           title="Total Projects"
           value={mockData.totalProjects}
-          description="Active blue carbon initiatives"
+          description="Active carbon ledger initiatives"
           icon={TreePine}
           trend={{
             value: 12,

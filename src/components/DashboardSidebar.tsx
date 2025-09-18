@@ -25,7 +25,7 @@ const navigationItems = [
     title: "Projects",
     icon: TreePine,
     href: "/projects",
-    description: "Blue carbon projects"
+    description: "Carbon ledger projects"
   },
   {
     title: "Credits Ledger",
@@ -71,7 +71,7 @@ export const DashboardSidebar = ({ isCollapsed, setIsCollapsed }: DashboardSideb
             <div className="flex items-center space-x-2">
               <Waves className="h-8 w-8 text-dashboard-accent" />
               <div>
-                <h1 className="font-bold text-lg">Blue Carbon</h1>
+                <h1 className="font-bold text-lg">BlueLedger</h1>
                 <p className="text-xs text-white/70">Admin Dashboard</p>
               </div>
             </div>
