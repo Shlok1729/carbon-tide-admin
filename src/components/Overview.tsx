@@ -219,11 +219,11 @@ export const Overview = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Average Price</span>
-                <span className="font-medium">$24.50/credit</span>
+                <span className="font-medium">₹2,035/credit</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Total Value</span>
-                <span className="font-medium text-primary">$69.7M</span>
+                <span className="font-medium text-primary">₹5,785M</span>
               </div>
             </div>
           </CardContent>
