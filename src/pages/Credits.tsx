@@ -34,7 +34,7 @@ const Credits = () => {
           />
           <DashboardCard
             title="Market Value"
-            value="$47.3M"
+            value="₹3,927M"
             description="+8.2% this quarter"
             icon={TrendingUp}
           />
